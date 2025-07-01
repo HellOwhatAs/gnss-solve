@@ -34,22 +34,10 @@ def main():
             print(i, name, {c: li.count(c) for c in "ABCD"}, "total", len(li))
 
         matplotlib.rcdefaults()
-        sns.displot(
-            data=pd.DataFrame(
-                {
-                    "skymask_distance_m": skymask_df["distance_m"],
-                    "weighted_distance_m": weighted_df["distance_m"],
-                }
-            ).melt(
-                value_vars=["skymask_distance_m", "weighted_distance_m"],
-                var_name="method",
-                value_name="distance_m",
-            ),
-            x="distance_m",
-            hue="method",
-            kind="kde",
-        )
-        plt.savefig(f"output/estimate_plot_{i}.pdf")
+        sns.displot(data=skymask_df, x="distance_m", kind="kde")
+        plt.savefig(f"output/skymask_estimate_plot_{i}.pdf")
+        sns.displot(data=weighted_df, x="distance_m", kind="kde")
+        plt.savefig(f"output/weighted_estimate_plot_{i}.pdf")
 
         skymask_df.to_excel(f"output/skymask_estimate_{i}.xlsx")
         weighted_df.to_excel(f"output/weighted_estimate_{i}.xlsx")
