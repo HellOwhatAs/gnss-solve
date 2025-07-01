@@ -10,7 +10,7 @@ dependencies = [
     "cachier>=3.1.2",
     "dowhen>=0.1.0",
     "geopandas>=1.1.1",
-    "gnss-lib-py>=1.0.4",
+    "gnss-lib-py==1.0.4",
     "pandas[excel]>=2.3.0",
     "pygc>=2.0.0",
     "seaborn>=0.13.2",

@@ -479,7 +479,7 @@ requires-dist = [
     { name = "cachier", specifier = ">=3.1.2" },
     { name = "dowhen", specifier = ">=0.1.0" },
     { name = "geopandas", specifier = ">=1.1.1" },
-    { name = "gnss-lib-py", specifier = ">=1.0.4" },
+    { name = "gnss-lib-py", specifier = "==1.0.4" },
     { name = "pandas", extras = ["excel"], specifier = ">=2.3.0" },
     { name = "pygc", specifier = ">=2.0.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
