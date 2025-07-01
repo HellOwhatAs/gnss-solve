@@ -1,0 +1,16 @@
+[project]
+name = "gnss-solve"
+version = "0.1.0"
+authors = [{ name = "HellOwhatAs", email = "xjq701229@outlook.com" }]
+urls = { homepage = "https://github.com/HellOwhatAs/gnss-solve/" }
+description = "GNSS positioning calculation."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cachier>=3.1.2",
+    "dowhen>=0.1.0",
+    "geopandas>=1.1.1",
+    "gnss-lib-py>=1.0.4",
+    "skymask-py>=0.1.0",
+    "tqdm>=4.67.1",
+]
