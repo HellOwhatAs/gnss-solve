@@ -11,6 +11,8 @@ dependencies = [
     "dowhen>=0.1.0",
     "geopandas>=1.1.1",
     "gnss-lib-py>=1.0.4",
+    "pandas[excel]>=2.3.0",
+    "pygc>=2.0.0",
     "skymask-py>=0.1.0",
     "tqdm>=4.67.1",
 ]
