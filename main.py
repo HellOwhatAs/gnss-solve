@@ -5,7 +5,6 @@ from skymask_example import get_skymask_estimate
 from weighted_example import get_weighted_estimate
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pandas as pd
 import matplotlib
 
 
